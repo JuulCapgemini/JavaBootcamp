@@ -12,8 +12,9 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
     private LocalDate startOfMonth;
     private String[] monthDays;
     private String title;
-    private final int titleWidth = 26;
-    private final int blockWidth = 32;
+
+    private final int blockWidth = 36;
+    private final int titleWidth = blockWidth - 6;//26;
 
     public MonthBlock(int monthNr) {
         month = monthNr;
@@ -33,7 +34,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         sbTitle = SetLengthString(sbTitle, titleWidth);
 
         sbTitle.append(year);
-        sbTitle.append("  ");//gap between blocks
+        sbTitle.append("    ");//gap between blocks
         title = sbTitle.toString();
         //System.out.println(title);
     }
@@ -48,6 +49,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         for (int i = 0; i < monthDays.length; i++) {
             monthDays[i] = "  ";
         }
+
         for (int i = 1; i <= daysInMonth; i++) {
 
             //Clear stringbuilder
@@ -55,7 +57,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
             //Get previous string
             sbMonthDays.append(monthDays[j]);
             //String of blockwidth length
-            sbMonthDays = SetLengthString(sbMonthDays, blockWidth);//TODO: maybe only at the end conversions back n forth?
+            //sbMonthDays = SetLengthString(sbMonthDays, blockWidth);//TODO: maybe only at the end conversions back n forth?
             //Same sized strings
             if (i < 10)
                 sbMonthDays.append("0");
@@ -63,12 +65,19 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
             sbMonthDays.append("  ");
             monthDays[j] = sbMonthDays.toString();
 
-
             //New line
-            if (j > 2/*Math.round(daysInMonth/monthDays.length)*/) {
+            if (j > 2) {
                 j = 0;
             } else
                 j++;
+        }
+
+        //Loop through strings and set correct length
+        StringBuilder buildMonthDays[] = new StringBuilder[monthDays.length];
+        for (int i = 0; i < monthDays.length; i++) {
+            buildMonthDays[i] = new StringBuilder(monthDays[i]);
+            buildMonthDays[i] = SetLengthString(buildMonthDays[i], blockWidth);
+            monthDays[i] = buildMonthDays[i].toString();
         }
     }
 

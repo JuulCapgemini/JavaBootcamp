@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96bdf8f-deff-47df-a298-bc067e2d41f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/AnimalChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/MammalChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/ReptileChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBootcamp/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/inheritance/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaBootcamp/capgemini/academy/bootcamp/time/MonthBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBootcamp/capgemini/academy/bootcamp/time/MonthBlock.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -78,14 +72,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="2203" />
-          <entry key="txt" value="50" />
+          <entry key="java" value="2559" />
+          <entry key="txt" value="202" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2203" />
-          <entry key="PLAIN_TEXT" value="95" />
+          <entry key="JAVA" value="2559" />
+          <entry key="PLAIN_TEXT" value="247" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -138,14 +132,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+            <state relative-caret-position="267">
+              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2523#2524#0" expanded="true" />
-                <element signature="e#2551#2552#0" expanded="true" />
-                <element signature="e#2589#2590#0" expanded="true" />
-                <element signature="e#2621#2622#0" expanded="true" />
+                <element signature="e#2825#2826#0" expanded="true" />
+                <element signature="e#2853#2854#0" expanded="true" />
+                <element signature="e#2891#2892#0" expanded="true" />
+                <element signature="e#2923#2924#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -154,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/CalenderText.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -179,6 +173,7 @@
       <find>try</find>
       <find>flie</find>
       <find>GetGrades</find>
+      <find>MonthContent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -289,7 +284,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542988846267" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542989674967" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../molveno" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -354,7 +349,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542900468014</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Calender now prints in a diferent order top to bottom then left to right. It is missing january for some reason.">
+      <created>1542988912510</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542988912510</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -405,7 +407,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Copied local project to Git!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Copied local project to Git!" />
+    <MESSAGE value="Calender now prints in a diferent order top to bottom then left to right. It is missing january for some reason." />
+    <option name="LAST_COMMIT_MESSAGE" value="Calender now prints in a diferent order top to bottom then left to right. It is missing january for some reason." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Motor.java" />
@@ -617,21 +620,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/CalenderText.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="58" column="32" lean-forward="true" selection-start-line="58" selection-start-column="32" selection-end-line="58" selection-end-column="32" />
+        <state relative-caret-position="267">
+          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2523#2524#0" expanded="true" />
-            <element signature="e#2551#2552#0" expanded="true" />
-            <element signature="e#2589#2590#0" expanded="true" />
-            <element signature="e#2621#2622#0" expanded="true" />
+            <element signature="e#2825#2826#0" expanded="true" />
+            <element signature="e#2853#2854#0" expanded="true" />
+            <element signature="e#2891#2892#0" expanded="true" />
+            <element signature="e#2923#2924#0" expanded="true" />
           </folding>
         </state>
       </provider>
