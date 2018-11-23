@@ -3,4 +3,5 @@ public class Human extends capgemini.academy.bootcamp.inheritance.Mammal {
     public Human() {
         super("human", 2);
     }
+
 }

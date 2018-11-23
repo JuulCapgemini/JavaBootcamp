@@ -45,4 +45,9 @@ public abstract class Animal {
         return Name;
     }
 
+/*    @Override
+    public static String toString()
+    {
+return "YO";
+    }*/
 }

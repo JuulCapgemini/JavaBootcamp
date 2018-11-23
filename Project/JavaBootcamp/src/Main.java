@@ -1,5 +1,6 @@
 import capgemini.academy.bootcamp.*;
 import capgemini.academy.bootcamp.Student;
+import capgemini.academy.bootcamp.inheritance.*;
 import capgemini.academy.bootcamp.time.MonthBlock;
 
 import java.io.IOException;
@@ -8,6 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
 import java.util.*;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -94,17 +96,57 @@ public class Main {
 
     private static void AnimalSimulation(Scanner sc) {
         //For exercise we don't import Animal
-        capgemini.academy.bootcamp.inheritance.Animal[] Animals = new capgemini.academy.bootcamp.inheritance.Animal[2];
-        Animals[0] = new capgemini.academy.bootcamp.inheritance.Human();
-        Animals[1] = new capgemini.academy.bootcamp.inheritance.Crocodile();
-        for (capgemini.academy.bootcamp.inheritance.Animal animal : Animals) {
-            PrintAnimal(animal, sc);
+        List<Animal> animals = GetAnimals();
+        StringBuilder animalsString = new StringBuilder();
+        for (Animal animal : animals) {
+            animalsString.append(animal.GetName() + " , ");
         }
+        PrintAnimals(animals, new MammalChecker());
+        PrintAnimals(animals, new ReptileChecker());
+
+        PrintAnimals(animals, new AnimalChecker() {
+            public boolean Check(Animal animal) {
+                return animal.GetName().length() > 5;
+            }
+        });
+
+        PrintAnimals(animals, (Animal animal) -> {
+            return animal.GetName().length() > 3;
+        });
+        PrintAnimals(animals, animal -> animal.GetName().length() > 5);
+
+        PrintAnimals(animals,animal -> animal instanceof Reptile);
+
+        System.out.println(animalsString);
+
         //Using static variables
-        System.out.println("In total there are " + Animals[0].animalCount + " animal (parents).");
+        System.out.println("In total there are " + animals.get(0).animalCount + " animal (parents).");
     }
 
-    private static void PrintAnimal(capgemini.academy.bootcamp.inheritance.Animal animal, Scanner sc) {
+    private static List<Animal> GetAnimals() {
+        List<Animal> animals = new ArrayList<>();
+        animals.add(new capgemini.academy.bootcamp.inheritance.Human());
+        animals.add(new capgemini.academy.bootcamp.inheritance.Crocodile());
+        return animals;
+    }
+
+    private static void PrintAnimalsPredicate(List<Animal> animals, Predicate<Animal> checker) {
+        for (Animal animal : animals) {
+            if (checker.test(animal)) {
+                System.out.println(animal.GetName());
+            }
+        }
+    }
+
+    private static void PrintAnimals(List<Animal> animals, AnimalChecker checker) {
+        for (Animal animal : animals) {
+            if (checker.Check(animal)) {
+                System.out.println(animal.GetName());
+            }
+        }
+    }
+
+    private static void BreedAnimal(capgemini.academy.bootcamp.inheritance.Animal animal, Scanner sc) {
         System.out.println("A " + animal.GetName() + " is a " + animal.GetAnimalKind());
         System.out.println("Do you want the " + animal.GetName() + " to breed? (Y/N)");
         //Input!

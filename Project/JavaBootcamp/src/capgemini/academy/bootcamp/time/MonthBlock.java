@@ -44,28 +44,31 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
 
         StringBuilder sbMonthDays = new StringBuilder();
         int j = 0;
-        int k = 0;
+        //Make sure there is no null but just spaces
+        for (int i = 0; i < monthDays.length; i++) {
+            monthDays[i] = "  ";
+        }
         for (int i = 1; i <= daysInMonth; i++) {
+
+            //Clear stringbuilder
+            sbMonthDays.delete(0, sbMonthDays.length());
+            //Get previous string
+            sbMonthDays.append(monthDays[j]);
+            //String of blockwidth length
+            sbMonthDays = SetLengthString(sbMonthDays, blockWidth);//TODO: maybe only at the end conversions back n forth?
             //Same sized strings
             if (i < 10)
                 sbMonthDays.append("0");
             sbMonthDays.append(i);
             sbMonthDays.append("  ");
+            monthDays[j] = sbMonthDays.toString();
+
 
             //New line
-            if (j >= 7/*Math.round(daysInMonth/monthDays.length)*/) {
+            if (j > 2/*Math.round(daysInMonth/monthDays.length)*/) {
                 j = 0;
-                sbMonthDays = SetLengthString(sbMonthDays, blockWidth);
-                monthDays[k] = sbMonthDays.toString();
-                sbMonthDays.delete(0, sbMonthDays.length());
-                k++;
             } else
                 j++;
-        }
-        //Unfinished lists
-        if (j != 0) {
-            sbMonthDays = SetLengthString(sbMonthDays, blockWidth);
-            monthDays[k] = sbMonthDays.toString();
         }
     }
 
