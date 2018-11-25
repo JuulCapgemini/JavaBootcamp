@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e96bdf8f-deff-47df-a298-bc067e2d41f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaBootcamp/capgemini/academy/bootcamp/time/MonthBlock.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaBootcamp/capgemini/academy/bootcamp/time/MonthBlock.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -62,34 +62,35 @@
     <session id="942895773">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="45" />
-          <entry key="java" value="2559" />
-          <entry key="txt" value="202" />
+          <entry key="java" value="3064" />
+          <entry key="txt" value="255" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2559" />
-          <entry key="PLAIN_TEXT" value="247" />
+          <entry key="JAVA" value="3064" />
+          <entry key="PLAIN_TEXT" value="300" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="java" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -99,14 +100,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="117" column="66" lean-forward="true" selection-start-line="117" selection-start-column="66" selection-end-line="117" selection-end-column="66" />
+            <state relative-caret-position="374">
+              <caret line="538" column="25" selection-start-line="538" selection-start-column="25" selection-end-line="538" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#main#0;class#Main#0" />
                 <element signature="method#VehicleSimulation#0;class#Main#0" />
-                <element signature="e#4834#4835#0" expanded="true" />
-                <element signature="e#4894#4895#0" expanded="true" />
                 <element signature="method#ShapeSimulation#0;class#Main#0" />
                 <element signature="method#TryCatchSimulation#0;class#Main#0" />
                 <element signature="method#Exception#0;class#Main#0" />
@@ -122,7 +121,6 @@
                 <element signature="method#PrintLowestScoringStudent#0;class#Main#0" />
                 <element signature="method#PrintHighestScoringStudent#0;class#Main#0" />
                 <element signature="method#TimeSimulator#0;class#Main#0" />
-                <element signature="method#CalenderSimulator#0;class#Main#0" />
                 <element signature="class#LibraryException#0;class#Main#0" />
               </folding>
             </state>
@@ -132,15 +130,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            <state relative-caret-position="141">
+              <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2825#2826#0" expanded="true" />
-                <element signature="e#2853#2854#0" expanded="true" />
-                <element signature="e#2891#2892#0" expanded="true" />
-                <element signature="e#2923#2924#0" expanded="true" />
+                <element signature="e#3047#3048#0" expanded="true" />
+                <element signature="e#3075#3076#0" expanded="true" />
+                <element signature="e#3113#3114#0" expanded="true" />
+                <element signature="e#3145#3146#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/StringBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="111" selection-start-line="111" selection-end-line="111" />
             </state>
           </provider>
         </entry>
@@ -250,8 +257,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -281,10 +286,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542989674967" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542989743928" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../molveno" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -356,7 +363,14 @@
       <option name="project" value="LOCAL" />
       <updated>1542988912510</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="January is working. Fixed spacing a bit.">
+      <created>1542989731357</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542989731357</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -372,8 +386,8 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.30738255" />
-      <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" visible="true" weight="0.30738255" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49682876" visible="true" weight="0.31208053" />
+      <window_info id="Structure" order="1" sideWeight="0.50317127" side_tool="true" visible="true" weight="0.31208053" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -390,7 +404,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -408,7 +422,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Copied local project to Git!" />
     <MESSAGE value="Calender now prints in a diferent order top to bottom then left to right. It is missing january for some reason." />
-    <option name="LAST_COMMIT_MESSAGE" value="Calender now prints in a diferent order top to bottom then left to right. It is missing january for some reason." />
+    <MESSAGE value="January is working. Fixed spacing a bit." />
+    <option name="LAST_COMMIT_MESSAGE" value="January is working. Fixed spacing a bit." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Motor.java" />
@@ -587,16 +602,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/CalenderText.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="111" selection-start-line="111" selection-end-line="111" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="117" column="66" lean-forward="true" selection-start-line="117" selection-start-column="66" selection-end-line="117" selection-end-column="66" />
+        <state relative-caret-position="374">
+          <caret line="538" column="25" selection-start-line="538" selection-start-column="25" selection-end-line="538" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#main#0;class#Main#0" />
             <element signature="method#VehicleSimulation#0;class#Main#0" />
-            <element signature="e#4834#4835#0" expanded="true" />
-            <element signature="e#4894#4895#0" expanded="true" />
             <element signature="method#ShapeSimulation#0;class#Main#0" />
             <element signature="method#TryCatchSimulation#0;class#Main#0" />
             <element signature="method#Exception#0;class#Main#0" />
@@ -612,29 +639,21 @@
             <element signature="method#PrintLowestScoringStudent#0;class#Main#0" />
             <element signature="method#PrintHighestScoringStudent#0;class#Main#0" />
             <element signature="method#TimeSimulator#0;class#Main#0" />
-            <element signature="method#CalenderSimulator#0;class#Main#0" />
             <element signature="class#LibraryException#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/CalenderText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/capgemini/academy/bootcamp/time/MonthBlock.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="72" column="9" lean-forward="true" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+        <state relative-caret-position="141">
+          <caret line="60" column="29" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2825#2826#0" expanded="true" />
-            <element signature="e#2853#2854#0" expanded="true" />
-            <element signature="e#2891#2892#0" expanded="true" />
-            <element signature="e#2923#2924#0" expanded="true" />
+            <element signature="e#3047#3048#0" expanded="true" />
+            <element signature="e#3075#3076#0" expanded="true" />
+            <element signature="e#3113#3114#0" expanded="true" />
+            <element signature="e#3145#3146#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -3,6 +3,7 @@ package capgemini.academy.bootcamp.time;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.YearMonth;
+import java.util.Calendar;
 
 public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
 
@@ -13,14 +14,14 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
     private String[] monthDays;
     private String title;
 
-    private final int blockWidth = 36;
+    private final int blockWidth = 40;
     private final int titleWidth = blockWidth - 6;//26;
 
     public MonthBlock(int monthNr) {
         month = monthNr;
         monthName = Month.of(monthNr).toString();
         monthName = CapitalStart(monthName);
-        monthDays = new String[4];
+        monthDays = new String[7];
         startOfMonth = LocalDate.of(year, monthNr, 1);
 
         MonthTitle();
@@ -49,27 +50,40 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         for (int i = 0; i < monthDays.length; i++) {
             monthDays[i] = "  ";
         }
-
-        for (int i = 1; i <= daysInMonth; i++) {
-
+//i=1;
+        //int k = 0;
+        LocalDate firstOfMonth = LocalDate.of(year, month, 1);
+        //System.out.println(firstOfMonth.getDayOfWeek());
+        //System.out.println(firstOfMonth.getDayOfWeek().getValue());
+        //System.out.println(Calendar.DAY_OF_WEEK_IN_MONTH);
+        int printStart = firstOfMonth.getDayOfWeek().getValue();//1;
+        int dayNr = 1;
+        for (int i = 1; dayNr <= daysInMonth; i++) {
             //Clear stringbuilder
             sbMonthDays.delete(0, sbMonthDays.length());
             //Get previous string
             sbMonthDays.append(monthDays[j]);
-            //String of blockwidth length
-            //sbMonthDays = SetLengthString(sbMonthDays, blockWidth);//TODO: maybe only at the end conversions back n forth?
-            //Same sized strings
-            if (i < 10)
-                sbMonthDays.append("0");
-            sbMonthDays.append(i);
-            sbMonthDays.append("  ");
+            //When to start printing
+            if (i >= printStart) {
+                //Same sized strings
+                if (dayNr < 10)
+                    sbMonthDays.append("0");
+                sbMonthDays.append(dayNr);
+                sbMonthDays.append("  ");
+                dayNr++;
+            } else {
+                sbMonthDays.append("ff");
+                sbMonthDays.append("  ");
+            }
             monthDays[j] = sbMonthDays.toString();
 
+
             //New line
-            if (j > 2) {
+            if (j > 5) {
                 j = 0;
             } else
                 j++;
+
         }
 
         //Loop through strings and set correct length

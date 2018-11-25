@@ -496,7 +496,7 @@ public class Main {
             sbTitles[i] = new StringBuilder();
         }
         //String days
-        StringBuilder[] sbDays = new StringBuilder[5 * 3];
+        StringBuilder[] sbDays = new StringBuilder[5 * 5];//hmm?
         for (int i = 0; i < sbDays.length; i++) {
             sbDays[i] = new StringBuilder();
         }
@@ -536,8 +536,8 @@ public class Main {
         int dayRowPrint = 0;
         for (StringBuilder sbTitle : sbTitles) {
             System.out.println(sbTitle.toString());
-            //Per title 5 rows of days
-            for (int m = 0; m < 5; m++) {
+            //Per title 7 rows of days
+            for (int m = 0; m < 7; m++) {
                 System.out.println(sbDays[dayRowPrint].toString());
                 dayRowPrint++;
             }
