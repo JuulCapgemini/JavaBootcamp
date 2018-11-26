@@ -1,6 +1,7 @@
 import capgemini.academy.bootcamp.*;
 import capgemini.academy.bootcamp.Student;
 import capgemini.academy.bootcamp.inheritance.*;
+import capgemini.academy.bootcamp.time.DayOfWeekShort;
 import capgemini.academy.bootcamp.time.MonthBlock;
 
 import java.io.IOException;
@@ -8,6 +9,8 @@ import java.nio.file.FileSystemException;
 import java.nio.file.Files;
 import java.nio.file.NoSuchFileException;
 import java.nio.file.Paths;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.*;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -115,7 +118,7 @@ public class Main {
         });
         PrintAnimals(animals, animal -> animal.GetName().length() > 5);
 
-        PrintAnimals(animals,animal -> animal instanceof Reptile);
+        PrintAnimals(animals, animal -> animal instanceof Reptile);
 
         System.out.println(animalsString);
 
@@ -496,9 +499,14 @@ public class Main {
             sbTitles[i] = new StringBuilder();
         }
         //String days
-        StringBuilder[] sbDays = new StringBuilder[5 * 5];//hmm?
+        StringBuilder[] sbDays = new StringBuilder[7 * 3];//hmm?
+        int weekDayNr = 1;
         for (int i = 0; i < sbDays.length; i++) {
-            sbDays[i] = new StringBuilder();
+            sbDays[i] = new StringBuilder(DayOfWeekShort.of(weekDayNr).toString()+" ");
+            if (weekDayNr >= 7)
+                weekDayNr = 1;
+            else
+                weekDayNr++;
         }
 
         int i = 0;
@@ -508,15 +516,18 @@ public class Main {
 
         for (MonthBlock month : months) {
             //Loop title
+
             sbTitles[j].append(month.GetTitle());//add titles next to each other
             i++;
             if (i > 3) {
                 i = 0;
+                sbTitles[j].insert(0, "   ");//ma. di. wo. do.
                 j++;//new row
             }
 
             //Loop days content for this month
             for (int l = 0; l < month.GetMonthDays().length; l++) {
+
                 sbDays[dayRow + l].append(month.GetMonthDays()[l]);
             }
 
@@ -525,7 +536,7 @@ public class Main {
                 /*Three blocks have been added to the proper list.
                 Now we add these to our 'row origin' which each month then offsets again
                  */
-                dayRow += 5;//There are 5 rows of days per month block. We just finished a row of blocks increment by 5
+                dayRow += 7;//There are 5 rows of days per month block. We just finished a row of blocks increment by 5
                 dayRowIncrementer = 0;//Reset the month block counter
             } else
                 dayRowIncrementer++;

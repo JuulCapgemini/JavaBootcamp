@@ -3,7 +3,6 @@ package capgemini.academy.bootcamp.time;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.YearMonth;
-import java.util.Calendar;
 
 public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
 
@@ -14,7 +13,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
     private String[] monthDays;
     private String title;
 
-    private final int blockWidth = 40;
+    private final int blockWidth = 24;
     private final int titleWidth = blockWidth - 6;//26;
 
     public MonthBlock(int monthNr) {
@@ -35,7 +34,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         sbTitle = SetLengthString(sbTitle, titleWidth);
 
         sbTitle.append(year);
-        sbTitle.append("    ");//gap between blocks
+        sbTitle.append("  ");//gap between blocks
         title = sbTitle.toString();
         //System.out.println(title);
     }
@@ -48,7 +47,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         int j = 0;
         //Make sure there is no null but just spaces
         for (int i = 0; i < monthDays.length; i++) {
-            monthDays[i] = "  ";
+            monthDays[i] = "";
         }
 //i=1;
         //int k = 0;
@@ -58,13 +57,13 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
         //System.out.println(Calendar.DAY_OF_WEEK_IN_MONTH);
         int printStart = firstOfMonth.getDayOfWeek().getValue();//1;
         int dayNr = 1;
-        for (int i = 1; dayNr <= daysInMonth; i++) {
+        for (int i = 1; i <= 42; i++) {//35
             //Clear stringbuilder
             sbMonthDays.delete(0, sbMonthDays.length());
             //Get previous string
             sbMonthDays.append(monthDays[j]);
             //When to start printing
-            if (i >= printStart) {
+            if (i >= printStart && dayNr<=daysInMonth) {
                 //Same sized strings
                 if (dayNr < 10)
                     sbMonthDays.append("0");
@@ -72,7 +71,7 @@ public class MonthBlock extends capgemini.academy.bootcamp.time.CalenderText {
                 sbMonthDays.append("  ");
                 dayNr++;
             } else {
-                sbMonthDays.append("ff");
+                sbMonthDays.append("  ");
                 sbMonthDays.append("  ");
             }
             monthDays[j] = sbMonthDays.toString();
