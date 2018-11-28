@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e96bdf8f-deff-47df-a298-bc067e2d41f2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Movies/movies/src/main/java/capgemini/academy/bootcamp/movies/controller/MovieController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/movies/src/main/java/capgemini/academy/bootcamp/movies/models/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Movies/movies/src/main/java/capgemini/academy/bootcamp/movies/repository/MovieRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Movies/movies/src/main/java/capgemini/academy/bootcamp/movies/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Movies/movies/src/main/java/capgemini/academy/bootcamp/movies/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Supermarket/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Supermarket/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Supermarket/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Supermarket/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Supermarket/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Supermarket/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Supermarket/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Supermarket/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../../../../Software Engineering/shapes/target/" />
@@ -62,13 +65,14 @@
     <session id="942895773">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -101,7 +105,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2363">
+            <state relative-caret-position="2397">
               <caret line="504" column="85" selection-start-line="504" selection-start-column="85" selection-end-line="504" selection-end-column="85" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -268,7 +272,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -298,16 +302,16 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543224930246" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../molveno" />
-    <property name="project.structure.last.edited" value="Problems" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
@@ -409,10 +413,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.37304965" visible="true" weight="0.3167785" />
-      <window_info id="Structure" order="1" sideWeight="0.6269504" side_tool="true" visible="true" weight="0.3167785" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.3716312" visible="true" weight="0.32147652" />
+      <window_info id="Structure" order="1" sideWeight="0.6283688" side_tool="true" visible="true" weight="0.32147652" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -510,9 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -541,9 +541,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="39" selection-start-column="35" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -551,9 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -622,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2363">
+        <state relative-caret-position="2397">
           <caret line="504" column="85" selection-start-line="504" selection-start-column="85" selection-end-line="504" selection-end-column="85" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -678,10 +672,6 @@
           <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3289#3290#0" expanded="true" />
-            <element signature="e#3317#3318#0" expanded="true" />
-            <element signature="e#3355#3356#0" expanded="true" />
-            <element signature="e#3387#3388#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,7 +733,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

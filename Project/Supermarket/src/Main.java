@@ -65,7 +65,10 @@ public class Main {
     private static void checkout(Supermarket superMarket, ArrayList<Product> shoppingCart) {
         System.out.println("-CHECKOUT-");
         System.out.println("----------");
-        double toPay = superMarket.Checkout(shoppingCart);
+        double[] money = superMarket.Checkout(shoppingCart);
+        double toPay = money[0];
+        double discount = money[1];
+        System.out.println("Discount: " + doubleToCurrency(discount));
         System.out.println("You have to pay: " + doubleToCurrency(toPay));
     }
 

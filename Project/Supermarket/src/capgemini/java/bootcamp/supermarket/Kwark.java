@@ -9,7 +9,7 @@ public class Kwark extends ActionProduct {
     }
 
     protected double actionPrice() {
-        System.out.println("action for kwark");
+        //System.out.println("action for kwark");
         return price;
     }
 

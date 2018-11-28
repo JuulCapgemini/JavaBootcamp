@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movies</title>
+</head>
+<body>
+<button onClick="getData()">Get Data</button>
+<br>
+<label for="movieTitle">Movie Title: </label>
+<input type="text" id="movieTitle"/>
+<button onClick="postData()">Add Movie</button>
+<br>
+<label for="movieId">Movie Id: </label>
+<input type="text" id="movieId"/>
+<button onClick="deleteData()">Delete Movie</button>
+<br>
+
+<div id="movies">
+</div>
+<script
+        src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script type="application/javascript" language="JavaScript">
+    var getData = function(){
+    $.ajax({
+        url: "http://localhost:8080/api/movie/all",
+        type: "get",
+        success: function (result) {
+            console.log(result);
+            $('#movies').html("");
+            $.each(result, function(index, movie) {
+                $('#movies').append(
+                    "<div>" +movie.id + " : " + movie.title + "</div>"
+                    );
+                });
+            },
+            error: function(result){
+                console.log(result);
+                $('#movies').html(result.responseText);
+            }
+        });
+    };
+
+    var postData = function(){
+        var movieTitle = $('#movieTitle').val();
+        console.log(movieTitle);
+        if(movieTitle == "") {
+            return;
+        }
+        $.ajax({
+            url: "http://localhost:8080/api/movie/",
+            type: "post",
+            data: JSON.stringify({
+                title: movieTitle
+            }),
+            contentType: "application/json",
+            success: function(result){
+                $('#movieTitle').val("");
+                getData();
+            },
+            error: function(result){
+                console.log(result);
+                window.alert("Couldn't add movie! " + result.responseText);
+            }
+        });
+    };
+
+
+    var deleteData = function(){
+        var movieId = $('#movieId').val();
+        if(movieId == "") {
+            return;
+        }
+        console.log(movieId);
+        $.ajax({
+            url: "http://localhost:8080/api/movie/delete/"+movieId,
+            type: "delete",
+            data: JSON.stringify({
+                id: movieId
+            }),
+            contentType: "application/json",
+            success:function(result){
+                $('#movieId').val("");
+                getData();
+            },
+            error: function(result){
+                console.log(result);
+                window.alert("Couldn't remove movie! "+result.responseText);
+            }
+        });
+    };
+</script>
+</body>
+</html>

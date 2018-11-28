@@ -11,10 +11,11 @@ public class Luier extends ActionProduct {
     }
 
     protected double actionPrice() {
-        //FREE!
-        System.out.println("action for luier");
+        //FREE!?
+        //System.out.println("action for luier");
         if (luierTotal == 4) {
-            System.out.println("You got a free luier!");
+            //System.out.println("You got a free luier!");
+            discount = price;
             price = 0;
             luierTotal = 0;
         }

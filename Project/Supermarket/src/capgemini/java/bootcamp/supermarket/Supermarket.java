@@ -16,8 +16,6 @@ public class Supermarket {
     }
 
     public Product addProduct(int productNr) {
-        Product stockProduct = products.get(productNr);
-
         return products.get(productNr).Clone();
         //return new Product(stockProduct.getName(), stockProduct.getPrice());
     }
@@ -26,11 +24,16 @@ public class Supermarket {
         return Collections.unmodifiableList(products);
     }
 
-    public double Checkout(List<Product> cart) {
+    public double[] Checkout(List<Product> cart) {
         double price = 0;
+        double discount = 0;
+        double[] returnValue = new double[2];
         for (Product product : cart) {
-            price+=product.getPrice();
+            price += product.getPrice();
+            discount = product.getDiscount();
         }
-        return price;
+        returnValue[0] = price;
+        returnValue[1] = discount;
+        return returnValue;
     }
 }
